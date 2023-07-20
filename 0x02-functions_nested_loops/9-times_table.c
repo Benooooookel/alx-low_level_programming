@@ -7,16 +7,16 @@
  */
 void times_table(void)
 {
-	int a, b;
+	int a, b, result;
 
 	for (a = 0; a < 10; a++)
 	{
-		for (b = a * 10;  b < 10; b++)
+		for (b = 0;  b < 10; b++)
 		{
-			_putchar(b + 48);
-			_putchar(',');
-			_putchar(' ');
+			result = a * b;
+			printf("%d, ", result);
 		}
-		_putchar('\n');
+		printf("\n");
+
 	}
 }
