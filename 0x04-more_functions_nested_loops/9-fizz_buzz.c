@@ -19,26 +19,29 @@ int main(void)
 void fizz_buzz(void)
 {
 	int num;
-	char *word[] = {"FIZZ", "FIZZBUZZ", "BUZZ"};
 
 	for (num = 1; num <= 100; num++)
 	{
 		if (num % 3 == 0 && num % 5 == 0)
 		{
-			printf("%s ", word[1]);
-			continue;
+			printf("FIZZBUZZ ");
 		}
-		if (num % 3 == 0)
+		else if (num % 3 == 0 && num % 5 != 0)
 		{
-			printf("%s ", word[0]);
-			continue;
+			printf("FIZZ ");
 		}
-		if (num % 5 == 0)
+		else if (num % 5 == 0 && num % 3 != 0)
 		{
-			printf("%s ", word[2]);
-			continue;
+			printf("BUZZ ");
 		}
-		printf("%d ", num);
+		else if (num == 1)
+		{
+			printf("%d ", num);
+		}
+		else
+		{
+			printf("%d ", num);
+		}
 	}
 	putchar('\n');
 }
