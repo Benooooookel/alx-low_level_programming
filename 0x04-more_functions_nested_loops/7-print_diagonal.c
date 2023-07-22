@@ -13,10 +13,10 @@ void print_diagonal(int n)
 		_putchar('\n');
 	}
 	else
-	{
+
 		int lent, width;
 		char line = '\\';
-		
+
 		for (lent = 0; lent < n; lent++)
 		{
 			for (width = 0; width < n; width++)
@@ -26,7 +26,7 @@ void print_diagonal(int n)
 				else if (width <= lent)
 				{
 					_putchar(' ');
-				}	
+				}
 			}
 			_putchar('\n');
 		}

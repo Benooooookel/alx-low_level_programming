@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * print_square - function that prints a square
- * @size: the size of the square, is size is  0 or less 
+ * @size: the size of the square, is size is  0 or less
  *        the function should print only a new line
  *        the charater to use is # to print the square
  */
@@ -26,7 +26,7 @@ void print_square(int size)
 				else
 					_putchar(hash);
 			}
-		_putchar('\n');	
+		_putchar('\n');
 		}
 	}
 }

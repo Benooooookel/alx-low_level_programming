@@ -13,7 +13,8 @@ int main(void)
 }
 /**
  * fizz_buzz - function that print number for 1 to 100
- * @c: the number 
+ *
+ * Return: nothing
  */
 void fizz_buzz(void)
 {
