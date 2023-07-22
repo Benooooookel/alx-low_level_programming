@@ -19,7 +19,7 @@ int main(void)
 void fizz_buzz(void)
 {
 	int num;
-	char *word[] = {"FIZZ","FIZZBUZZ","BUZZ"};
+	char *word[] = {"FIZZ", "FIZZBUZZ", "BUZZ"};
 
 	for (num = 1; num <= 100; num++)
 	{
@@ -37,7 +37,7 @@ void fizz_buzz(void)
 		{
 			printf("%s ", word[2]);
 			continue;
-		}	
+		}
 		printf("%d ", num);
 	}
 	putchar('\n');
