@@ -21,7 +21,7 @@ void print_triangle(int size)
 		{
 			for (col = 0; col < size; col++)
 			{
-				if (col != row)
+				if (col <= row)
 				{
 					_putchar(hash);
 				}
