@@ -14,9 +14,9 @@ void puts_half(char *str)
 	if (lent % 2 == 0)
 		n = lent / 2;
 
-	else 
+	else
 		n = (lent + 1) / 2;
-	 
+ 
 	for (index = n; index < lent; index++)
 		_putchar(str[index]);
 
