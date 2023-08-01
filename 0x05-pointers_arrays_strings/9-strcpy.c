@@ -6,7 +6,8 @@
  *            including the terminating null byte('\0')
  *            followd by new line
  * @dest: is the destination where the string will be copied to
- * @scr: is the string to be copied
+ * @src: is the string to be copied
+ * Return: the destination of the copid string
  */
 char *_strcpy(char *dest, char *src)
 {
