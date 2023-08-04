@@ -9,7 +9,8 @@ explore projects  in c programming that can help you  learn more about c prgramm
 
 int main(void)
 { 
-printf (Hello world);
-return (0);
+   printf("Hello world");
+   return (0);
 }
 ~~~~
+below the program prints hello world
