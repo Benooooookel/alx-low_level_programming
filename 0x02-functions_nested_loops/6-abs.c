@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 #include <stdlib.h>
+#include <ctype.h>
 /**
  * -abs - function that computes the absolute value of an integer
  *  and also some nagetive number
