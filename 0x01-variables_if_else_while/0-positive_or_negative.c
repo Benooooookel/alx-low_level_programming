@@ -4,7 +4,7 @@
 /**
  * main - function that returns tha nagative and positive
  * random number of an integer using rand fun
-`i
+ *
  * Auth: kelechi nnadi <alx swe>
  *
  * Return: 0
@@ -16,7 +16,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	if (n > 0)
+	if (n > 0)d
 	{
 		printf("%d is positive\n", n);
 	}
