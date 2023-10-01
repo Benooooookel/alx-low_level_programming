@@ -4,7 +4,7 @@
 /**
  * main - function that returns tha nagative and positive
  * random number of an integer using rand fun
- *
+`i
  * Auth: kelechi nnadi <alx swe>
  *
  * Return: 0
@@ -22,7 +22,7 @@ int main(void)
 	}
 	else if (n < 0)
 	{
-		printf("%d is nagative\n", n);
+		printf("%d is negative\n", n);
 	}
 	else
 	{
