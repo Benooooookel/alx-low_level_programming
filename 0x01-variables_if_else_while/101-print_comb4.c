@@ -12,9 +12,11 @@ int main(void)
 	while (digit1 <= 7)
 	{
 		int digit2 = digit1 + 1;
+
 		while (digit2 <= 8)
 		{
 			int digit3 = digit2 + 1;
+
 			while (digit3 <= 9)
 			{
 				putchar(digit1 + '0');
