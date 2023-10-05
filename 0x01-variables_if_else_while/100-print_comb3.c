@@ -7,24 +7,24 @@
  */
 int main(void)
 {
-	int n = 0, m = 1;
+	int digit1 = 0, digit2 = 2;
 
-	while (n <= 8)
+	while (digit1 <= 8)
 	{
-		while (m <= 9)
+		while (digit2 <= 9)
 		{
-			putchar(n + '0');
-			putchar(m + '0');
+			putchar(digit1 + '0');
+			putchar(digit2 + '0');
 			
-			if (n != 8 || m != 9)
+			if (digit1 != 8 || digit2 != 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
-			m++;
+			digit2++;
 		}
-		n++;
-		m = n + 1;
+		digit1++;
+		digit2 = digit1 + 1;
 	}
 	putchar('\n');
 	return (0);
