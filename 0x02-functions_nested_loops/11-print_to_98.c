@@ -10,15 +10,28 @@
 void print_to_98(int n)
 {
 	int last = 98;
-
-	while (n <= last)
+	if (n < last)
 	{
-		printf("%d, ", n);
-		n--;
+		int num = -0;
+		for (num = -0; num <= last; num++)
+		{
+			_putchar(num + '0');
+			_putchar((num / 10) + '0');
+			_putchar((num % 10) + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
-	while (n >= last)
+	else
 	{
-		printf("%d, ", n);
-		n++;
+		for (;n >= last; n--)
+		{
+			_putchar(n + '0');
+			_putchar((n / 10) + '0');
+			_putchar((n % 10) + '0');
+			_putchar(',');
+			_putchar(' ');
+		}
 	}
+	_putchar('\n');
 }
