@@ -4,7 +4,7 @@
 /**
  * jack_bauer - function that prints every minute of the day of jack
  *              Bauer, starting from 00.00 to 23:59
- * 
+ *
  * Auth: kelechi nnadi <alx swe>
  */
 void jack_bauer(void)
