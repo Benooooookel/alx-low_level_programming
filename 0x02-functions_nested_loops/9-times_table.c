@@ -8,19 +8,18 @@
  */
 void times_table(void)
 {
-	int width, col;
+	int width, col, res;
 
 	for (width = 0; width <= 9; width++)
 	{
-		for (col = 0 * 1; col <= 9; col++)
+		for (col = 0; col <= 9; col++)
 		{
-			if (width == 9)
-				continue;
-			_putchar(width + '0');
-			_putchar(',');
-			_putchar(' ');
-			_putchar(col + '0');
+			res = width * col;
+			if (col == 0)
+				printf("%2d", res);
+			else
+				printf(", %2d", res);
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 }
