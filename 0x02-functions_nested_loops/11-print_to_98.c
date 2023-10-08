@@ -10,33 +10,16 @@
 void print_to_98(int n)
 {
 	int last = 98;
-	if (n < last)
+	if (n >= last)
 	{
-		int num = -0;
-		for (num = -0; num <= last; num++)
+		int num = n;
+		for (;num <= last; num++)
 		{
+			_putchar((num / 10) + '0');
 			if (num > 9)
-			{
-				_putchar((num / 10) + '0');
-			}
-			_putchar((num % 10) + '0');
+				_putchar((num % 10) + '0');
 			_putchar(',');
 			_putchar(' ');
 		}
 	}
-	else
-	{
-		for (;n >= last; n--)
-		{
-			if (n > 99)
-			{
-				_putchar((n % 10) + '0');
-			}
-			_putchar((n / 10) + '0');
-			_putchar((n % 10) + '0');
-			_putchar(',');
-			_putchar(' ');
-		}
-	}
-	_putchar('\n');
 }
