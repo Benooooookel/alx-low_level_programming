@@ -1,4 +1,4 @@
-/**
+/*
  * file: 0-isupper.c
  * Auth: kelechi nnadi <alx swe>
  */
