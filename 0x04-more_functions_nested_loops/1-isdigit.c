@@ -1,8 +1,7 @@
-/**
+/*
  * file: 1-isdigit.c
  * Auth: kelechi nnadi <alx-swe>
  */
-
 #include <stdio.h>
 #include "main.h"
 #include <ctype.h>

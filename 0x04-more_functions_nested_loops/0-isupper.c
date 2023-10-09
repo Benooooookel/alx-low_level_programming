@@ -1,3 +1,8 @@
+/**
+ * file: 0-isupper.c
+ * Auth: kelechi nnadi <alx swe>
+ */
+
 #include <ctype.h>
 #include "main.h"
 #include <stdio.h>
