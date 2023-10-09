@@ -23,7 +23,7 @@ void print_square(int size)
 	{
 		for (col = 0; col < size; col++)
 		{
-			if (size < 0 || size == 0)
+			if (size < 0 && size == 0)
 				_putchar('\n');
 			_putchar(square);
 		}
