@@ -11,12 +11,16 @@
  */
 void print_number(int n)
 {
-	if (n >= 0 || n <= 99)
+	if (n >= 0 && n <= 99)
 		_putchar((n / 10) + '0');
 	else if (n > 99)
 	{
-		_putchar((n / 10) + '0');
-		_putchar((n % 10) + '0');
+		_putchar(n + '0');
+		_putchar((n + '0') + '0');
+	}
+	else if (n < 0)
+	{
+		_putchar(+n + '0');
 	}
 	_putchar((n % 10) + '0');
 }
