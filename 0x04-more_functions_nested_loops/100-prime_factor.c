@@ -9,24 +9,25 @@
 int main(void)
 {
 	long int num = 612852475143;
-	int loop;
+	int i;
 
 	while (num % 2 == 0)
 	{
-		printf("%d", 2);
-		num = num / 2;
+		printf("%d ", 2);
+		num = num/2;
 	}
 
-	for (loop = 2; loop * loop <= num; loop = loop + 2)
+	for (i = 3; i*i <= num; i = i + 2)
 	{
-		while (num % loop == 0)
+		while (num % i == 0)
 		{
-			printf("%d", loop);
-			num  = num / loop;
+			printf("%d ", i);
+			num = num/i;
 		}
-	}
 
-	if (num > 2)
-		printf("%ld", num);
+		if (num > 2)
+			printf ("%ld ", num);
+	}
+	printf("\n");
 	return (0);
 }
