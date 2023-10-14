@@ -6,6 +6,7 @@
 #include "main.h"
 #include <stdio.h>
 
+
 /**
  * print_array - function that prints n elements of an array of integers
  *               followed by a new line, where n is the number of elements
@@ -23,8 +24,6 @@ void print_array(int *a, int n)
 	for (idx = 0; idx < n; idx++)
 	{
 		printf("%d, ", a[idx]);
-		if (idx == 5)
-			continue;
 	}
 	printf("\n");
 }
