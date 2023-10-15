@@ -6,7 +6,7 @@
 #include "main.h"
 
 /**
- * _strcpy - function that copies a string
+ * _strncpy - function that copies a string
  * @dest: the pointer to the destination
  * @src: the pointer to the source string
  * @n: the number of times to be printed
