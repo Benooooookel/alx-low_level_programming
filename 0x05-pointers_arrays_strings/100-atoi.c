@@ -9,15 +9,17 @@
 #include <limits.h>
 
 /**
- * _atio - function that convert a string to an integer
+ * _atoi - function that convert a string to an integer
  * @s: the string pointer to character
  * Return: returns the converted integal number as an int value.
  *         if no valid  conversion could be performed it returns zero
  */
 int _atoi(char *s)
 {
-	int res,i;
+	int res, i;
+
 	int len = strlen(s);
+
 	for (i = 0; i <= len; i++)
 	{
 		if (s[i] == ' ')
