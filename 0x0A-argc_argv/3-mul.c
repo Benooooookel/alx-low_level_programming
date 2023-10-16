@@ -13,14 +13,16 @@
  * @argv: the array of string
  * Return: always 0
  */
-int main(int argc, char *argv[]__attribute__((unused)))
+int main(int argc, char *argv[])
 {
-	printf("%d \n", argc * argc);
-	
-	if (argc == 1)
+	int i, sum = 1;
+
+	for (i = 1; i < argc; i++)
 	{
-		exit(EXIT_FAILURE);
-		return (1);
+		if (argc == 0)
+			printf("Error\n");
+		sum = sum * atoi(argv[i]);
 	}
+	printf("%d\n", sum);
 	return (0);
 }
