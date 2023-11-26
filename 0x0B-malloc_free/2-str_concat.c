@@ -16,14 +16,15 @@ char *str_concat(char *s1, char *s2)
 {
 	char *ptr;
 	int len1, len2, total;
+
 	if (s1 == NULL || s2 == NULL)
 	{
 		return (NULL);
 	}
-	
+
 	len1 = strlen(s1);
 	len2 = strlen(s2);
-	total = len1 + len2;
+	total = len1 + len2 + 1;
 
 	ptr = malloc(sizeof(total));
 
@@ -32,7 +33,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	strcpy(ptr, s1);
-	
+
 	strcat(ptr, s2);
 
 	return (ptr);
