@@ -18,7 +18,7 @@ char *_strdup(char *str)
 	ptr = strdup(str);
 	if (ptr == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	return (ptr);
 }
