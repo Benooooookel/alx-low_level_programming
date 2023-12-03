@@ -8,6 +8,8 @@
 int main(void)
 {
 	int num1, num2;
-
-	i = atoi();
+	if ()
+	if ()
+	if ()
+	return (0);
 }
