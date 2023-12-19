@@ -7,13 +7,23 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list new;
-	va_start(new, format);
+	int i = 0, j = 0;
+	char *separator = "";
+	va_list mem;
+	va_start(mem, format);
+	ptr func[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+	};
 
-	for (i = 0; i < format; i++)
+	va_start(mem, format);
+
+	while (format && (*(format + i)))
 	{
-		str = va_arg(new, format);
+		j = 0;
 
-
-	}	
+		while (j < 4 && (*(format + i) ! = *(funcs[
+	}
 }
